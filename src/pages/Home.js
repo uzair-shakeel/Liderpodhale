@@ -178,7 +178,15 @@ const HomePage = () => {
         </p>
 
         {/* <Carousel /> */}
-        <Check />
+        <Check
+          companyName={"Grzegorczyk Hale Stalowe"}
+          testimonialText={
+            "Dzięki wsparciu biura Lider, nasze hale stalowe są doskonaleubezpieczone. Profesjonalne porady i zaangażowanie Grzesia pozwalają nam skupić się na naszej głównej działalności.Dziękujemy za współpracę!"
+          }
+          imageSrc={
+            "https://luxury-bunny-b94631.netlify.app/assets/testimonials1.jpg"
+          }
+        />
       </section>
 
       <section className="px-[6%] py-4 mt-4 bg-gray-300">

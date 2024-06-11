@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Check from "./Check";
 
 export default function SimpleSlider() {
   var settings = {
@@ -14,22 +15,37 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       <div>
-        <h3>1</h3>
+        <Check
+          companyName={"Grzegorczyk Hale Stalowe"}
+          testimonialText={
+            "Dzięki wsparciu biura Lider, nasze hale stalowe są doskonaleubezpieczone. Profesjonalne porady i zaangażowanie Grzesia pozwalają nam skupić się na naszej głównej działalności.Dziękujemy za współpracę!"
+          }
+          imageSrc={
+            "https://luxury-bunny-b94631.netlify.app/assets/testimonials1.jpg"
+          }
+        />
       </div>
       <div>
-        <h3>2</h3>
+        <Check
+          companyName={"Grzegorczyk Hale Stalowe"}
+          testimonialText={
+            "Dzięki wsparciu biura Lider, nasze hale stalowe są doskonaleubezpieczone. Profesjonalne porady i zaangażowanie Grzesia pozwalają nam skupić się na naszej głównej działalności.Dziękujemy za współpracę!"
+          }
+          imageSrc={
+            "https://luxury-bunny-b94631.netlify.app/assets/testimonials1.jpg"
+          }
+        />
       </div>
       <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
+        <Check
+          companyName={"Grzegorczyk Hale Stalowe"}
+          testimonialText={
+            "Dzięki wsparciu biura Lider, nasze hale stalowe są doskonaleubezpieczone. Profesjonalne porady i zaangażowanie Grzesia pozwalają nam skupić się na naszej głównej działalności.Dziękujemy za współpracę!"
+          }
+          imageSrc={
+            "https://luxury-bunny-b94631.netlify.app/assets/testimonials1.jpg"
+          }
+        />
       </div>
     </Slider>
   );
