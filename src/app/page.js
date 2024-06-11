@@ -3,7 +3,7 @@ import HomePage from "@/pages/Home";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#ecfafa]">
       <HomePage />
     </div>
   );

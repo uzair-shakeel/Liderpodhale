@@ -11,6 +11,8 @@ import school from "../../public/school.jpeg";
 import Image from "next/image";
 import FAQ from "../components/FAQ";
 import Card from "../components/Card";
+import Carousel from "../components/carousel";
+import Check from "../components/Check";
 
 const HomePage = () => {
   const carouselItems = [
@@ -72,7 +74,7 @@ const HomePage = () => {
 
   return (
     <>
-      <section className="px-[6%] py-[5%]">
+      <section className="px-[6%] py-[5%] bg-white">
         <div className="grid grid-cols-2 gap-[5%]">
           <div className="my-auto">
             <h1 className="text-5xl font-bold text-[#14a8e9]">
@@ -93,16 +95,16 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-[#f3f5f5] py-[5%] ">
-        <h1 className="text-3xl px-[6%]  font-semibold uppercase ">
+      <section className="bg-[#ecfafa] py-[5%] ">
+        <h1 className="text-3xl px-[6%] text-[#162a5d] font-semibold uppercase ">
           Insurance
         </h1>
         <div className="w-full overflow-x-auto carousel-container">
-          <div className="flex w-1/5 animate-carousel  gap-5 py-6">
+          <div className="flex w-1/4 animate-carousel  gap-5 py-6">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 text-start shadow-lg rounded-lg cursor-pointer hover:bg-black/10 duration-300"
+                className="w-full flex-shrink-0 bg-white hover:scale-105 text-start shadow-lg rounded-lg cursor-pointer duration-300"
               >
                 <Image
                   src={item.imgSrc}
@@ -130,7 +132,7 @@ const HomePage = () => {
         `}</style>
       </section>
 
-      <section className="py-[5%] px-[6%]  grid grid-cols-2 gap-[5%]">
+      <section className="py-[5%] px-[6%] bg-[#ecfafa]  grid grid-cols-2 gap-[5%]">
         <Image
           src={hero}
           alt="img"
@@ -139,25 +141,64 @@ const HomePage = () => {
         <FAQ />
       </section>
 
-      <section className="px-[6%] grid grid-cols-3 gap-10">
-        <Card
-          imageSrc={
-            "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5308_cropped.JPG"
-          }
-          footerText={"Ubezpieczenia"}
-        />
-        <Card
-          imageSrc={
-            "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5192_cropped.JPG"
-          }
-          footerText={"Tłumaczenie"}
-        />
-        <Card
-          imageSrc={
-            "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5246_cropped.JPG"
-          }
-          footerText={"Rejestracja pojazdów"}
-        />
+      <section className="px-[6%] bg-[#ecfafa]">
+        <h3 className="font-bold text-2xl text-center py-4 text-[#162a5d]">
+          NASZE USŁUGI
+        </h3>
+        <div className="grid grid-cols-3 gap-10">
+          <Card
+            imageSrc={
+              "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5308_cropped.JPG"
+            }
+            footerText={"Ubezpieczenia"}
+          />
+          <Card
+            imageSrc={
+              "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5192_cropped.JPG"
+            }
+            footerText={"Tłumaczenie"}
+          />
+          <Card
+            imageSrc={
+              "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5246_cropped.JPG"
+            }
+            footerText={"Rejestracja pojazdów"}
+          />
+        </div>
+      </section>
+
+      <section className="px-[6%] py-[8%] bg-[#ecfafa] flex items-center justify-center flex-col">
+        <h2 className="font-bold text-[#162a5d] text-2xl text-center">
+          Już obsłużyliśmy ponad 110 000 zadowolonych klientów
+        </h2>
+        <p className="text-md leading-12 mb-8 text-center w-[75%] my-3 mx-auto">
+          Twoja satysfakcja jest dla nas najważniejsza i motywuje nas do
+          kontynuowania naszej pracy. Poniżej kilka opinii od naszych stałych
+          klientów, zobacz dlaczego warto wybrać naszą firmę:
+        </p>
+
+        {/* <Carousel /> */}
+        <Check />
+      </section>
+
+      <section className="px-[6%] py-4 mt-4 bg-gray-300">
+        <h6 className="text-sm fotn-bold">Materiał marketingowy</h6>
+
+        <p className="text-tiny py-3">
+          * Składka za pakiet OC i AC z Assistance Złoty+ wysokości 764 zł
+          rocznie została wyliczona dla Klienta w wieku 39 lat, mieszkańca
+          Węgrzc, powiat krakowski, właściciela Hondy Jazz.
+        </p>
+        <p className="text-tiny">
+          * Składka za pakiet OC i AC z Assistance Standard w wysokości 676 zł
+          rocznie została wyliczona dla Klienta w wieku 33 lat, mieszkańca
+          Bobrowników, posiadacza Forda Focusa.
+        </p>
+        <p className="text-tiny py-3">
+          * Składka OC z Assistance Standard w wysokości 375 zł rocznie została
+          wyliczona dla Klienta w wieku 51 lat, mieszkańca Rybarzowic, powiat
+          bielski, właściciela Toyoty Auris.
+        </p>
       </section>
     </>
   );

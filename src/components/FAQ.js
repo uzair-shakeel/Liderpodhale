@@ -4,7 +4,9 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function App() {
   return (
     <div className="flex flex-col">
-      <h1 className="font-bold text-2xl py-3">Najczęściej zadawane pytania</h1>
+      <h1 className="font-bold text-2xl py-3 text-[#162a5d]">
+        Najczęściej zadawane pytania
+      </h1>
       <Accordion selectionMode="multiple">
         <AccordionItem key="1" aria-label="1" title=" Jakie języki tłumaczymy?">
           Angielski, Niemiecki, Włoski, Francuski, Holenderski, Szwedzki,
