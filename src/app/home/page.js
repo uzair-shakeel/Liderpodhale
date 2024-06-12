@@ -1,19 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import bg from "../../public/Insurance3.png";
-import car from "../../public/vehicle.jpeg";
-import property from "../../public/property.jpeg";
-import hero from "../../public/Hero.png";
-import life from "../../public/life.jpeg";
-import company from "../../public/company.jpeg";
-import travel from "../../public/travel.jpeg";
-import school from "../../public/school.jpeg";
+import bg from "../../../public/Insurance3.png";
+import car from "../../../public/vehicle.jpeg";
+import property from "../../../public/property.jpeg";
+import hero from "../../../public/Hero.png";
+import life from "../../../public/life.jpeg";
+import company from "../../../public/company.jpeg";
+import travel from "../../../public/travel.jpeg";
+import school from "../../../public/school.jpeg";
 import Image from "next/image";
-import FAQ from "../components/FAQ";
-import Card from "../components/Card";
-import Carousel from "../components/carousel";
-import Check from "../components/Check";
-import Note from "../components/Note";
+import FAQ from "../../components/FAQ";
+import Card from "../../components/Card";
+import Check from "../../components/Check";
+import Note from "../../components/Note";
 
 const HomePage = () => {
   const carouselItems = [
@@ -211,26 +210,6 @@ const HomePage = () => {
       </section>
 
       <Note />
-
-      {/* <section className="px-[6%] py-4 mt-4 bg-gray-300">
-        <h6 className="text-sm fotn-bold">Materiał marketingowy</h6>
-
-        <p className="text-tiny py-3">
-          * Składka za pakiet OC i AC z Assistance Złoty+ wysokości 764 zł
-          rocznie została wyliczona dla Klienta w wieku 39 lat, mieszkańca
-          Węgrzc, powiat krakowski, właściciela Hondy Jazz.
-        </p>
-        <p className="text-tiny">
-          * Składka za pakiet OC i AC z Assistance Standard w wysokości 676 zł
-          rocznie została wyliczona dla Klienta w wieku 33 lat, mieszkańca
-          Bobrowników, posiadacza Forda Focusa.
-        </p>
-        <p className="text-tiny py-3">
-          * Składka OC z Assistance Standard w wysokości 375 zł rocznie została
-          wyliczona dla Klienta w wieku 51 lat, mieszkańca Rybarzowic, powiat
-          bielski, właściciela Toyoty Auris.
-        </p>
-      </section> */}
     </>
   );
 };

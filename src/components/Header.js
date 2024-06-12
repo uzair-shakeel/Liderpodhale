@@ -1,14 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="px-[6%]   flex items-center justify-between shadow-md">
       <Image src={logo} alt="logo" className="h-24 w-auto" />
       <ul className="flex cursor-pointer  gap-6 font-bold ">
-        <li className="hover:text-gray-500 duration-150">Home</li>
-        <li className="hover:text-gray-500 duration-150">insurance</li>
+        <Link href={"home"}>
+          <li className="hover:text-gray-500 duration-150">Home</li>
+        </Link>
+        <Link href={"insurance"}>
+          <li className="hover:text-gray-500 duration-150">insurance</li>
+        </Link>
         <li className="hover:text-gray-500 duration-150">Registration</li>
         <li className="hover:text-gray-500 duration-150">Translations</li>
         <li className="hover:text-gray-500 duration-150">Downlaod</li>
