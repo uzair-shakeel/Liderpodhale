@@ -23,9 +23,15 @@ const Header = () => {
         <Link href={"download"}>
           <li className="hover:text-gray-500 duration-150">Downlaod</li>
         </Link>
-        <li className="hover:text-gray-500 duration-150">Pattern</li>
-        <li className="hover:text-gray-500 duration-150">The Nas</li>
-        <li className="hover:text-gray-500 duration-150">Contact</li>
+        <Link href={"pattern"}>
+          <li className="hover:text-gray-500 duration-150">Pattern</li>
+        </Link>
+        <Link href={"nas"}>
+          <li className="hover:text-gray-500 duration-150">The Nas</li>
+        </Link>
+        <Link href={"contact"}>
+          <li className="hover:text-gray-500 duration-150">Contact</li>
+        </Link>
       </ul>
     </div>
   );
