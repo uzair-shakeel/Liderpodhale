@@ -11,7 +11,6 @@ import school from "../../public/school.jpeg";
 import Image from "next/image";
 import FAQ from "../components/FAQ";
 import Card from "../components/Card";
-import Carousel from "../components/carousel";
 import Check from "../components/Check";
 import Note from "../components/Note";
 
