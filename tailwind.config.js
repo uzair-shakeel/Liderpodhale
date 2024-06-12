@@ -8,6 +8,25 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  module: {
+    rules: [
+      {
+        test: /\.pdf$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "pdfs/", // or any other desired output path
+            },
+          },
+        ],
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   theme: {
     extend: {
       backgroundImage: {

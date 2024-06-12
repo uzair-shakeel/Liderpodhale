@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
-import "rsuite/dist/rsuite-no-reset.min.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { CustomProvider } from "rsuite";
 
 import "./globals.css";
 
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
       <NextUIProvider>
         <body className={inter.className}>
           <Header />
-          <CustomProvider>{children}</CustomProvider>
+          <main>{children}</main>
           <Footer />
         </body>
       </NextUIProvider>

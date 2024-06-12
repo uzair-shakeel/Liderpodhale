@@ -14,9 +14,15 @@ const Header = () => {
         <Link href={"insurance"}>
           <li className="hover:text-gray-500 duration-150">insurance</li>
         </Link>
-        <li className="hover:text-gray-500 duration-150">Registration</li>
-        <li className="hover:text-gray-500 duration-150">Translations</li>
-        <li className="hover:text-gray-500 duration-150">Downlaod</li>
+        <Link href={"registration"}>
+          <li className="hover:text-gray-500 duration-150">Registration</li>
+        </Link>
+        <Link href={"translation"}>
+          <li className="hover:text-gray-500 duration-150">Translations</li>
+        </Link>
+        <Link href={"download"}>
+          <li className="hover:text-gray-500 duration-150">Downlaod</li>
+        </Link>
         <li className="hover:text-gray-500 duration-150">Pattern</li>
         <li className="hover:text-gray-500 duration-150">The Nas</li>
         <li className="hover:text-gray-500 duration-150">Contact</li>
