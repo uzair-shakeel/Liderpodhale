@@ -74,7 +74,7 @@ const HomePage = () => {
 
   return (
     <>
-      <section className="px-[6%] py-[5%] pb-20 md:pb-0 bg-white">
+      <section className="px-[6%] py-[5%] pb-20 md:pb-10 bg-white">
         <div className="grid lg:grid-cols-2 gap-[5%]">
           <div className="my-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-[#14a8e9]">
