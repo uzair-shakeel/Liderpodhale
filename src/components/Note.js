@@ -2,7 +2,7 @@ import React from "react";
 
 const Note = () => {
   return (
-    <section className="px-[6%] py-4 mt-4 bg-gray-300">
+    <section className="px-[6%] py-4  bg-gray-300">
       <h6 className="text-tiny md:text-sm fotn-bold">Materiał marketingowy</h6>
 
       <p className="text-[9px] md:text-tiny py-3">

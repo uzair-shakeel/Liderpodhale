@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../public/logo.png";
 import Up from "../../public/chevron-up-solid.svg";
+import Link from "next/link";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -24,24 +25,41 @@ const Footer = () => {
         <p>Wróć na górę</p>
       </div>
       <div className="flex flex-col md:flex-row justify-between py-8">
-        <div className="text-center font-semibold flex flex-col items-center md:items-start">
-          <Image src={logo} alt="logo" className="h-24 lg:h-[170px] w-auto" />
+        <div className="text-center font-semibold flex flex-col items-center ">
+          <Link href="home">
+            <Image src={logo} alt="logo" className="h-24 lg:h-[170px] w-auto" />
+          </Link>
           <h2 className="text-[#14a8e9]">Liderpodhale PL</h2>
         </div>
 
         <div className="flex justify-center py-4 md:py-auto gap-[30%] md:w-[40%]">
           <ul className="space-y-3 py-4">
             <li className="font-semibold ">Sekcje</li>
-            <li className=" cursor-pointer">Ubezpieczenia</li>
-            <li className=" cursor-pointer">Rejestracja</li>
-            <li className=" cursor-pointer">Tłumaczenia</li>
-            <li className="cursor-pointer">Pobierz</li>
-            <li className=" cursor-pointer">Wzory</li>
+            <li className=" cursor-pointer">
+              <Link href="insurance">Ubezpieczenia</Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link href="registration">Rejestracja</Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link href="translation">Tłumaczenia</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link href="download">Pobierz</Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link href="pattern">Wzory</Link>
+            </li>
           </ul>
           <ul className="space-y-3 py-4">
             <li className="font-semibold">O nas</li>
-            <li className=" cursor-pointer">O nas</li>
-            <li className=" cursor-pointer">Kontakt</li>
+
+            <li className=" cursor-pointer">
+              <Link href="nas">O nas</Link>
+            </li>
+            <li className=" cursor-pointer">
+              <Link href="contact">Kontakt</Link>
+            </li>
           </ul>
         </div>
       </div>

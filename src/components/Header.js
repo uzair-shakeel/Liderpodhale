@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <>
       <div className="px-[6%] hidden  lg:flex items-center justify-between shadow-md">
-        <Image src={logo} alt="logo" className="h-24 w-auto" />
+        <Link href="home">
+          <Image src={logo} alt="logo" className="h-24 w-auto" />
+        </Link>
         <ul className="hidden lg:flex cursor-pointer  gap-6 font-bold ">
           <Link href={"home"}>
             <li className="hover:text-gray-500 duration-150">Home</li>
@@ -41,7 +43,9 @@ const Header = () => {
         </ul>
       </div>
       <div className="px-[6%] flex z-10 lg:hidden items-center justify-between shadow-md">
-        <Image src={logo} alt="logo" className="h-24 w-auto" />
+        <Link href="home">
+          <Image src={logo} alt="logo" className="h-24 w-auto" />
+        </Link>
         <button onClick={() => setOpen(!open)}>
           <CiMenuFries className="w-8 h-auto duration-75 hover:text-blue-600 hover:scale-[110%] hover:rotate-12 hover:text-bold" />
         </button>

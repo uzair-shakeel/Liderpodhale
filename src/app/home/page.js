@@ -151,18 +151,21 @@ const HomePage = () => {
               "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5308_cropped.JPG"
             }
             footerText={"Ubezpieczenia"}
+            linkText={"insurance"}
           />
           <Card
             imageSrc={
               "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5192_cropped.JPG"
             }
             footerText={"Tłumaczenie"}
+            linkText={"translation"}
           />
           <Card
             imageSrc={
               "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5246_cropped.JPG"
             }
             footerText={"Rejestracja pojazdów"}
+            linkText={"registration"}
           />
         </div>
       </section>

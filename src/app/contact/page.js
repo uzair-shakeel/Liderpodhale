@@ -27,7 +27,7 @@ const page = () => {
               <Tab key="photos" title="Nowy Targ">
                 <div>
                   <div className="mb-4">
-                    <p>Jana Kilińskiego 15</p>
+                    <p>Adres</p>
                     <Button
                       className="bg-blue-100 w-full items-start py-2"
                       startContent={
@@ -40,7 +40,7 @@ const page = () => {
                         )
                       }
                     >
-                      34-400 Nowy Targ
+                      Jana Kilińskiego 15, 34-400 Nowy Targ
                     </Button>
                   </div>
                   <div className="mb-4">
@@ -50,9 +50,7 @@ const page = () => {
                       startContent={
                         <FaPhoneAlt className="text-2xl text-default-400 pointer-events-none flex-shrink-0 py-[3px]" />
                       }
-                      onClick={() =>
-                        window.open("https://wa.me/+48662969662", "_blank")
-                      }
+                      onClick={() => window.open("tel:+48662969662", "_self")}
                     >
                       +48 662 969 662
                     </Button>
