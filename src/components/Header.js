@@ -43,15 +43,12 @@ const Header = () => {
       <div className="px-[6%] flex z-10 lg:hidden items-center justify-between shadow-md">
         <Image src={logo} alt="logo" className="h-24 w-auto" />
         <button onClick={() => setOpen(!open)}>
-          <CiMenuFries
-            // onclick={() => setOpen(!open)}
-            className="w-8 h-auto duration-75 hover:text-blue-600 hover:scale-[110%] hover:rotate-12 hover:text-bold"
-          />
+          <CiMenuFries className="w-8 h-auto duration-75 hover:text-blue-600 hover:scale-[110%] hover:rotate-12 hover:text-bold" />
         </button>
       </div>
 
       <aside
-        className={`fixed top-0 right-0 mx-auto my-auto duration-500 h-full w-full bg-blue-500 text-white p-3 z-5 ${
+        className={`fixed top-0 right-0 mx-auto my-auto duration-500 h-full w-full bg-blue-500 text-white p-3 z-20 ${
           open === true ? "translate-y-0" : "translate-y-[-800px]"
         }`}
       >

@@ -28,55 +28,65 @@ const page = () => {
                 <div>
                   <div className="mb-4">
                     <p>Jana Kilińskiego 15</p>
-                    <Input
-                      type="text"
-                      placeholder=" 34-400 Nowy Targ"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full items-start py-2"
                       startContent={
                         <FaLocationCrosshairs className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
-                    />
+                      onClick={() =>
+                        window.open(
+                          "https://www.google.com/maps?q=34-400+Nowy+Targ",
+                          "_blank"
+                        )
+                      }
+                    >
+                      34-400 Nowy Targ
+                    </Button>
                   </div>
                   <div className="mb-4">
                     <p>Zadzwoń do nas</p>
-                    <Input
-                      type="number"
-                      placeholder="+48 662 969 662"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full py-2"
                       startContent={
                         <FaPhoneAlt className="text-2xl text-default-400 pointer-events-none flex-shrink-0 py-[3px]" />
                       }
-                    />
+                      onClick={() =>
+                        window.open("https://wa.me/+48662969662", "_blank")
+                      }
+                    >
+                      +48 662 969 662
+                    </Button>
                   </div>
                   <div className="space-y-2">
                     <p>Pon - Pt, 8:00-17:00</p>
                     <p>E-mail </p>
                     <p>dział rejestracji i tłumaczeń</p>
-                    <Input
-                      type="email"
-                      placeholder=" nowytarg@liderpodhale.pl"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full py-2"
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
-                    />
+                      onClick={() =>
+                        window.open("mailto:nowytarg@liderpodhale.pl", "_blank")
+                      }
+                    >
+                      nowytarg@liderpodhale.pl
+                    </Button>
                     <p>dział ubezpieczeń</p>
-                    <Input
-                      type="email"
-                      placeholder="ubezpieczenia@liderpodhale.pl"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full py-2"
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
-                    />
+                      onClick={() =>
+                        window.open(
+                          "mailto:ubezpieczenia@liderpodhale.pl",
+                          "_blank"
+                        )
+                      }
+                    >
+                      ubezpieczenia@liderpodhale.pl
+                    </Button>
                   </div>
                 </div>
               </Tab>
