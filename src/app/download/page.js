@@ -1,8 +1,18 @@
+"use client";
 import React from "react";
 import { FaFilePdf } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 
 export default function App() {
+  const handleDownloadClick = (pdfFileName) => {
+    const pdfPath = `/PDFs/${pdfFileName}`;
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = pdfFileName;
+    link.target = "_blank";
+    link.click();
+  };
+
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center text-[#14a8e9] pb-12">
@@ -10,7 +20,10 @@ export default function App() {
       </h1>
       <div>
         <ul>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("1.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa polsko - angielska</p>
@@ -22,7 +35,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("2.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa polsko-niemiecka</p>
@@ -34,7 +50,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("3.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa polsko-włoska</p>
@@ -46,7 +65,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("4.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa polsko-holenderska</p>
@@ -58,7 +80,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("5.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa darowizny</p>
@@ -70,7 +95,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("6.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Umowa kupna-sprzedaży</p>
@@ -82,7 +110,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("7.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Deklaracja PCC-3</p>
@@ -94,7 +125,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("8.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Deklaracja AKC-US</p>
@@ -106,7 +140,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("9.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Oświadczenie pod odpowiedzialnością karną</p>
@@ -118,7 +155,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("10.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Zgłoszenie zbycia pow. Nowotarski</p>
@@ -130,7 +170,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("11.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Zgłoszenie zbycia pow. Tatrzański</p>
@@ -142,7 +185,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("12.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Zgody RODO</p>
@@ -154,7 +200,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("13.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Pełnomocnictwo i Oświadczenie</p>
@@ -166,7 +215,10 @@ export default function App() {
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
           </li>
-          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+          <li
+            onClick={() => handleDownloadClick("14.pdf")}
+            className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900"
+          >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
               <p>Oświadczenie sprawcy kolizji</p>
