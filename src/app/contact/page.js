@@ -15,12 +15,12 @@ import { MdEmail } from "react-icons/md";
 
 const page = () => {
   return (
-    <div className="py-12 px-[10%] bg-[#ecfafa]">
+    <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <h1 className="text-3xl text-center text-[#14a8e9] font-bold pb-8">
         SKONTAKTUJ SIĘ Z NAMI
       </h1>
-      <div className="grid grid-cols-2 gap-12">
-        <div className="pr-[12%]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="lg:pr-[12%] text-center lg:text-start">
           <h2>Porozmawiajmy o wszystkim razem</h2>
           <div className="flex w-full flex-col">
             <Tabs aria-label="Options" className="py-4">
@@ -127,9 +127,9 @@ const page = () => {
             </Tabs>
           </div>
         </div>
-        <div className="px-[8%]">
+        <div className="lg:px-[8%] text-center lg:text-start">
           <p>Interesuję się...</p>
-          <div className="flex flex-wrap gap-4 py-8">
+          <div className="flex flex-wrap gap-4 py-8 ">
             <Button>Rejestracja samochodu</Button>
             <Button>Ubezpieczenie</Button>
             <Button>Tłumaczenie</Button>

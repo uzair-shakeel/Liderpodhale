@@ -10,7 +10,7 @@ const page = () => {
     <div className="bg-[#ecfafa]">
       <Registrations />
       <Safe />
-      <div className="px-[10%] py-8">
+      <div className="px-[5%] lg:px-[10%] py-8">
         <FAQ />
       </div>
       <Note />

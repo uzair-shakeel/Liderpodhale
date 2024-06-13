@@ -3,14 +3,14 @@ import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 
 export default function App() {
   return (
-    <div className="py-12 px-[10%] bg-[#ecfafa]">
+    <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <Card
         isBlurred
         className="px-4 border-none bg-background/60 dark:bg-default-100/50 max-w-screen"
         shadow="sm"
       >
         <CardBody>
-          <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
+          <div className="grid text-center lg:text-start grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
             <div className="relative col-span-6 md:col-span-4">
               <Image
                 alt="Album cover"

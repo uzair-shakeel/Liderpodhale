@@ -19,13 +19,13 @@ const Footer = () => {
           className="p-3 rounded-full shadow-md hover:shadow-lg animate-bounce bg-white"
           onClick={scrollToTop}
         >
-          <Image src={Up} alt="up" className="h-8 w-8" />
+          <Image src={Up} alt="up" className="h-4 w-4 lg:h-8 lg:w-8" />
         </button>
         <p>Wróć na górę</p>
       </div>
       <div className="flex justify-between py-8">
         <div className="text-center font-semibold">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" className="h-24 lg:h-[170px] w-auto" />
           <h2 className="text-[#14a8e9]">Liderpodhale PL</h2>
         </div>
 

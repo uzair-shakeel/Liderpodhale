@@ -75,13 +75,13 @@ const HomePage = () => {
   return (
     <>
       <section className="px-[6%] py-[5%] bg-white">
-        <div className="grid grid-cols-2 gap-[5%]">
+        <div className="grid lg:grid-cols-2 gap-[5%]">
           <div className="my-auto">
-            <h1 className="text-5xl font-bold text-[#14a8e9]">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#14a8e9]">
               It is worth getting good insurance
             </h1>
 
-            <p className="py-8 text-lg leading-14">
+            <p className="py-8 lg:text-lg leading-14">
               As a Leader, we offer tailored insurance solutions to meet your
               unique needs, providing peace of mind and comprehensive
               protection. Category All categories Vehicle insurance Property
@@ -100,7 +100,7 @@ const HomePage = () => {
           Insurance
         </h1>
         <div className="w-full overflow-x-auto carousel-container">
-          <div className="flex w-1/4 animate-carousel  gap-5 py-6">
+          <div className="flex w-1/2 lg:w-1/4 animate-carousel  gap-5 py-6">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -132,7 +132,7 @@ const HomePage = () => {
         `}</style>
       </section>
 
-      <section className="py-[5%] px-[6%] bg-[#ecfafa]  grid grid-cols-2 gap-[5%]">
+      <section className="py-[5%] px-[6%] bg-[#ecfafa]  grid lg:grid-cols-2 gap-[5%]">
         <Image
           src={hero}
           alt="img"
@@ -145,7 +145,7 @@ const HomePage = () => {
         <h3 className="font-bold text-2xl text-center py-4 text-[#162a5d]">
           NASZE USŁUGI
         </h3>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-10">
           <Card
             imageSrc={
               "https://luxury-bunny-b94631.netlify.app/assets/img/home-intro/IMG_5308_cropped.JPG"
@@ -178,7 +178,7 @@ const HomePage = () => {
         </p>
 
         {/* <Carousel /> */}
-        <div className="flex gap-[20px] my-[20px]">
+        <div className="flex gap-[20px] my-[20px]  lg:flex-row">
           <Check
             companyName={"KALATA"}
             testimonialText={

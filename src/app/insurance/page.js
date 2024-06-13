@@ -10,7 +10,7 @@ const Insurance = () => {
     <div className="bg-[#ecfafa]">
       <Insurances />
       <Safe />
-      <div className="px-[10%] py-8">
+      <div className="px-[5%] lg:px-[10%] py-8">
         <FAQ />
       </div>
       <Note />

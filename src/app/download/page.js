@@ -4,8 +4,8 @@ import { IoMdDownload } from "react-icons/io";
 
 export default function App() {
   return (
-    <div className="py-12 px-[10%] bg-[#ecfafa]">
-      <h1 className="text-5xl font-bold text-center pb-12">
+    <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
+      <h1 className="text-3xl lg:text-5xl font-bold text-center text-[#14a8e9] pb-12">
         Przydatne dokumenty
       </h1>
       <div>

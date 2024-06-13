@@ -39,11 +39,11 @@ const Registrations = () => {
     },
   ];
   return (
-    <div className="px-[10%] py-14">
+    <div className="px-[5%] lg:px-[10%] py-14">
       <h1 className="uppercase pb-8 font-bold text-3xl text-[#14a8e9] text-center">
         Rejestracja
       </h1>
-      <div className="grid grid-cols-2 grid-rows-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
         {items.map((item, index) => (
           <div
             key={index}
@@ -52,11 +52,13 @@ const Registrations = () => {
             <Image
               src={item.imgSrc}
               alt={item.title}
-              className="h-[260px] object-cover"
+              className="h-[200px] lg:h-[260px] object-cover"
             />
             <div className="py-4 px-3">
-              <h3 className="font-semibold py-2 text-lg">{item.title}</h3>
-              <p className="leading-6 text-gray-700 text-sm">
+              <h3 className="font-semibold py-2 text-xl text-center lg:text-start lg:text-lg">
+                {item.title}
+              </h3>
+              <p className="leading-6 text-gray-700 text-sm text-justify">
                 {item.description}
               </p>
             </div>
