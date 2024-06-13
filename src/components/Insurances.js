@@ -60,7 +60,7 @@ const Insurances = () => {
   return (
     <div className="px-[5%] lg:px-[10%] py-14">
       <h1 className="uppercase pb-8 font-bold text-3xl text-[#14a8e9] text-center">
-        samochodu
+        Ubezpieczenia
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6">
         {items.map((item, index) => (

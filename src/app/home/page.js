@@ -78,17 +78,17 @@ const HomePage = () => {
         <div className="grid lg:grid-cols-2 gap-[5%]">
           <div className="my-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-[#14a8e9]">
-              It is worth getting good insurance
+              Warto mieć dobre ubezpieczenie
             </h1>
-
             <p className="py-8 lg:text-lg leading-14">
-              As a Leader, we offer tailored insurance solutions to meet your
-              unique needs, providing peace of mind and comprehensive
-              protection. Category All categories Vehicle insurance Property
-              insurance Life insurance Company insurance Travel insurance School
-              insurance ... Vehicle insurance Our offer includes twenty
-              insurance companies, which allows us to prepare an offer perfectly
-              tailored to the client's needs.
+              Jako Lider oferujemy dostosowane do indywidualnych potrzeb
+              rozwiązania ubezpieczeniowe, zapewniające spokój ducha i
+              kompleksową ochronę. Kategorie Wszystkie kategorie Ubezpieczenie
+              pojazdu Ubezpieczenie mienia Ubezpieczenie na życie Ubezpieczenie
+              firmowe Ubezpieczenie podróżne Ubezpieczenie szkolne ...
+              Ubezpieczenie pojazdu Nasza oferta obejmuje dwadzieścia firm
+              ubezpieczeniowych, co pozwala nam przygotować ofertę idealnie
+              dopasowaną do potrzeb klienta.
             </p>
           </div>
           <Image src={bg} alt="bg" />
@@ -97,7 +97,7 @@ const HomePage = () => {
 
       <section className="bg-[#ecfafa] py-[5%] ">
         <h1 className="text-3xl px-[6%] text-[#162a5d] font-semibold uppercase ">
-          Insurance
+          Ubezpieczenia
         </h1>
         <div className="w-full overflow-x-auto carousel-container">
           <div className="flex w-full md:w-1/2 lg:w-1/4 animate-carousel  gap-5 py-6">
