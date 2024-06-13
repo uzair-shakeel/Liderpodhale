@@ -4,9 +4,11 @@ import reg2 from "../../public/registration2.jpg";
 import reg3 from "../../public/registration3.jpeg";
 import reg4 from "../../public/registration4.jpeg";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Registrations = () => {
-  const items = [
+  const { language } = useLanguage();
+  const itemsPolish = [
     {
       id: 1,
       title: "Pośrednictwo rejestracji pojazdu",
@@ -14,7 +16,6 @@ const Registrations = () => {
         "Nasi specjaliści pomagają w procesie rejestracji i opłat celno skarbowych od pojazdów zakupionych w kraju i z za zagranicy. Nasze wieloletnie doświadczenie pozwoli zaoszczędzić czas i wysiłek, unikając biurokratycznych procedur i kolejek w urzędach.",
       imgSrc: reg1,
     },
-
     {
       id: 2,
       title: "Fachowa Pomoc i Doradztwo",
@@ -22,7 +23,6 @@ const Registrations = () => {
         "Masz zamiar importować pojazd lub zakupić w kraju. Zadzwoń do nas i bezpiecznie dokonaj zakupu. Posiadamy wiedzę i doświadczenie, które pozwalają skutecznie poradzić sobie z różnymi aspektami oraz wymogami prawnymi i procedurami administracyjnymi.",
       imgSrc: reg2,
     },
-
     {
       id: 3,
       title: "Rejestracja Pojazdu zabytkowego",
@@ -38,10 +38,43 @@ const Registrations = () => {
       imgSrc: reg4,
     },
   ];
+
+  const itemsUkrainian = [
+    {
+      id: 1,
+      title: "Посередництво реєстрації транспортних засобів",
+      description:
+        "Наші фахівці допомагають у процесі реєстрації та сплаті митних податків за транспортні засоби, придбані в країні та за кордоном. Наш багаторічний досвід дозволяє заощадити час і зусилля, уникаючи бюрократичних процедур і черг в установах.",
+      imgSrc: reg1,
+    },
+    {
+      id: 2,
+      title: "Професійна Допомога та Консультації",
+      description:
+        "Ви маєте намір імпортувати транспортний засіб або придбати в країні. Зателефонуйте нам і безпечно здійсніть покупку. Ми володіємо знаннями та досвідом, які дозволяють ефективно справлятися з різними аспектами та вимогами законодавства і адміністративними процедурами.",
+      imgSrc: reg2,
+    },
+    {
+      id: 3,
+      title: "Реєстрація Старовинного Транспортного Засобу",
+      description:
+        "Ми маємо великий досвід у реєстрації старовинних транспортних засобів. Ми допомагаємо комплексно вирішити справу, пройдемо за вас всю процедуру до отримання жовтих номерних знаків.",
+      imgSrc: reg3,
+    },
+    {
+      id: 4,
+      title: "Загублені Таблиці",
+      description:
+        "Втрата номерного знака або реєстраційного свідоцтва більше не є проблемою. Завдяки нашим послугам ви можете отримати дублікат без зайвих зусиль.",
+      imgSrc: reg4,
+    },
+  ];
+
+  const items = language === "pl" ? itemsPolish : itemsUkrainian;
   return (
     <div className="px-[5%] lg:px-[10%] py-14">
       <h1 className="uppercase pb-8 font-bold text-3xl text-[#14a8e9] text-center">
-        Rejestracja
+        {language === "pl" ? `Rejestracja` : `Реєстрація`}
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
         {items.map((item, index) => (

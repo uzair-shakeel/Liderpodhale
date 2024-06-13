@@ -1,9 +1,12 @@
 "use client";
+import { useLanguage } from "@/context/LanguageContext";
 import React from "react";
 import { FaFilePdf } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 
 export default function App() {
+  const { language } = useLanguage();
+
   const handleDownloadClick = (pdfFileName) => {
     const pdfPath = `/PDFs/${pdfFileName}`;
     const link = document.createElement("a");
@@ -16,7 +19,7 @@ export default function App() {
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center text-[#14a8e9] pb-12">
-        Przydatne dokumenty
+        {language === "pl" ? "Przydatne dokumenty" : "Завантаження"}
       </h1>
       <div>
         <ul>
@@ -26,11 +29,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>
+                {language === "pl"
+                  ? "Umowa polsko - angielska"
+                  : "Польсько-англійська угода"}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -41,11 +48,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko-niemiecka</p>
+              <p>
+                {language === "pl"
+                  ? "Umowa polsko-niemiecka"
+                  : "Польсько-німецька угода"}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -56,11 +67,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko-włoska</p>
+              <p>
+                {language === "pl"
+                  ? "Umowa polsko-włoska"
+                  : "Польсько-італійська угода"}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -71,11 +86,16 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko-holenderska</p>
+              <p>
+                {language === "pl"
+                  ? `Umowa
+                polsko-holenderska`
+                  : `Польсько-голландська угода`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -86,11 +106,13 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa darowizny</p>
+              <p>
+                {language === "pl" ? `Umowa darowizny` : `Угода про дарунок`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -101,11 +123,16 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa kupna-sprzedaży</p>
+              <p>
+                {language === "pl"
+                  ? `Umowa
+                kupna-sprzedaży`
+                  : `Декларація PCC-3`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -116,11 +143,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Deklaracja PCC-3</p>
+              <p>
+                {language === "pl"
+                  ? `Deklaracja PCC-3`
+                  : `Заява під кримінальною відповідальністю`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -131,11 +162,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Deklaracja AKC-US</p>
+              <p>
+                {language === "pl"
+                  ? `Deklaracja AKC-US`
+                  : `Угода про купівлю-продаж`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -146,11 +181,16 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Oświadczenie pod odpowiedzialnością karną</p>
+              <p>
+                {language === "pl"
+                  ? `Oświadczenie pod
+                odpowiedzialnością karną`
+                  : `Декларація AKC-US`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -161,11 +201,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Zgłoszenie zbycia pow. Nowotarski</p>
+              <p>
+                {language === "pl"
+                  ? `Zgłoszenie zbycia pow. Nowotarski`
+                  : `Повідомлення про передачу пав. Новотарський`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -176,11 +220,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Zgłoszenie zbycia pow. Tatrzański</p>
+              <p>
+                {language === "pl"
+                  ? `Zgłoszenie zbycia pow. Tatrzański`
+                  : `Повідомлення про передачу пав. Татрзянський`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -191,11 +239,11 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Zgody RODO</p>
+              <p>{language === "pl" ? `Zgody RODO` : `Згоди GDPR`}</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -206,11 +254,16 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Pełnomocnictwo i Oświadczenie</p>
+              <p>
+                {language === "pl"
+                  ? `Pełnomocnictwo i
+                Oświadczenie`
+                  : `Довіреність та Заява`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>
@@ -221,11 +274,15 @@ export default function App() {
           >
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Oświadczenie sprawcy kolizji</p>
+              <p>
+                {language === "pl"
+                  ? `Oświadczenie sprawcy kolizji`
+                  : `Заява винуватця ДТП`}
+              </p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
-                Download
+                {language === "pl" ? "pobierać" : "завантажити"}
               </button>
               <IoMdDownload size={25} className="group-hover:animate-bounce" />
             </div>

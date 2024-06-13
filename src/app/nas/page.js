@@ -1,7 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function App() {
+  const { language } = useLanguage();
+
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <Card
@@ -26,13 +30,18 @@ export default function App() {
               <div className="flex justify-between items-start">
                 <div className="flex flex-col gap-0">
                   <h1 className="text-large font-semibold mt-2">
-                    GRZEGORZ WARCIAK
+                    {language === "pl"
+                      ? "GRZEGORZ WARCIAK"
+                      : "GRZEGORZ WARCIAK"}
                   </h1>
                   <p className="text-small text-foreground/80 pb-8 mt-2">
-                    Założyciel firmy Liderpodhale
+                    {language === "pl"
+                      ? "Założyciel firmy Liderpodhale"
+                      : "Засновник компанії Лідерподгалля"}
                   </p>
                   <h3 className="text-foreground/90 text-justify text-sm md:text-md	">
-                    Cześć! Nazywam się Grzegorz Warciak i jestem dumnym
+                    {language === "pl"
+                      ? `Cześć! Nazywam się Grzegorz Warciak i jestem dumnym
                     właścicielem Multiagencji Lider. Moja przygoda z
                     ubezpieczeniami, rejestracją aut i tłumaczeniami rozpoczęła
                     się w 2006 roku, kiedy postanowiłem, że chcę przynieść
@@ -49,7 +58,8 @@ export default function App() {
                     zaangażowaniem, determinacją i dbałością o każdy, nawet
                     najdrobniejszy szczegół. Zapraszam do współpracy. Razem
                     znajdziemy rozwiązanie idealnie dostosowane do Twoich
-                    potrzeb!
+                    potrzeb!`
+                      : `Привіт! Мене звати Гжегож Варцяк, і я гордий власник Multiagencji Lider. Моя подорож у сфері страхування, реєстрації автомобілів та перекладів розпочалася у 2006 році, коли я вирішив, що хочу надавати мешканцям Подгалля послуги найвищої якості у цих галузях. Я заснував Lider з однією метою: зробити життя моїх клієнтів простішим і безпечнішим. З самого початку я був визначений не лише надавати стандартні послуги, але й пристосовувати їх до індивідуальних потреб кожної людини, яка завітала до нашого офісу. Мої захоплення, такі як мотоциклізм, крос та походи в гори, навчили мене, наскільки важливими є почуття безпеки і впевненості. Ці досвіди відображаються у тому, як я веду Multiagencję Lider - з захопленням, рішучістю і увагою до кожної, навіть найдрібнішої деталі. Запрошую до співпраці. Разом знайдемо рішення, ідеально пристосоване до ваших потреб!`}
                   </h3>
                 </div>
               </div>

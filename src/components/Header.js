@@ -5,41 +5,71 @@ import logo from "../../public/logo.png";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
+import { useLanguage } from "@/context/LanguageContext";
+
+import { Avatar, AvatarGroup } from "@nextui-org/react";
 
 const Header = () => {
+  const { language, setLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
     <>
-      <div className="px-[6%] hidden  lg:flex items-center justify-between shadow-md">
+      <div className="px-[3%] hidden  lg:flex items-center justify-between shadow-md">
         <Link href="home">
           <Image src={logo} alt="logo" className="h-24 w-auto" />
         </Link>
-        <ul className="hidden lg:flex cursor-pointer  gap-6 font-bold ">
+        <ul className="hidden lg:flex items-center cursor-pointer  gap-6 font-bold ">
           <Link href={"home"}>
-            <li className="hover:text-gray-500 duration-150">Strona główna</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Strona główna" : "Головна"}
+            </li>
           </Link>
           <Link href={"insurance"}>
-            <li className="hover:text-gray-500 duration-150">Ubezpieczenia</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Ubezpieczenia" : "Страхування"}
+            </li>
           </Link>
           <Link href={"registration"}>
-            <li className="hover:text-gray-500 duration-150">Rejestracja</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Rejestracja" : "Реєстрація"}
+            </li>
           </Link>
           <Link href={"translation"}>
-            <li className="hover:text-gray-500 duration-150">Tłumaczenia</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Tłumaczenia" : "Переклад"}
+            </li>
           </Link>
           <Link href={"download"}>
-            <li className="hover:text-gray-500 duration-150">Pobierz</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Pobierz" : "Завантаження"}
+            </li>
           </Link>
           <Link href={"pattern"}>
-            <li className="hover:text-gray-500 duration-150">Wzory</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "Wzory" : "Зразки"}
+            </li>
           </Link>
           <Link href={"nas"}>
-            <li className="hover:text-gray-500 duration-150">O nas</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? "O nas" : "Про нас"}
+            </li>
           </Link>
           <Link href={"contact"}>
-            <li className="hover:text-gray-500 duration-150">Kontakt</li>
+            <li className="hover:text-gray-500 duration-150">
+              {language === "pl" ? " Kontakt" : "Контакт"}
+            </li>
           </Link>
+          <AvatarGroup isBordered>
+            <Avatar
+              onClick={() => setLanguage("pl")}
+              src="https://cdn.britannica.com/52/3552-004-83ABA964/Flag-Poland.jpg"
+            />
+            <Avatar
+              onClick={() => setLanguage("uk")}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png"
+            />
+          </AvatarGroup>
         </ul>
       </div>
       <div className="px-[6%] flex z-10 lg:hidden items-center justify-between shadow-md">
