@@ -50,7 +50,7 @@ const Footer = () => {
             <li className=" cursor-pointer">
               <Link href="pattern">Wzory</Link>
             </li>
-          </ul>
+          </ul> 
           <ul className="space-y-3 py-4">
             <li className="font-semibold">O nas</li>
 

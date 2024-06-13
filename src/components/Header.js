@@ -17,28 +17,28 @@ const Header = () => {
         </Link>
         <ul className="hidden lg:flex cursor-pointer  gap-6 font-bold ">
           <Link href={"home"}>
-            <li className="hover:text-gray-500 duration-150">Home</li>
+            <li className="hover:text-gray-500 duration-150">Strona główna</li>
           </Link>
           <Link href={"insurance"}>
-            <li className="hover:text-gray-500 duration-150">insurance</li>
+            <li className="hover:text-gray-500 duration-150">Ubezpieczenia</li>
           </Link>
           <Link href={"registration"}>
-            <li className="hover:text-gray-500 duration-150">Registration</li>
+            <li className="hover:text-gray-500 duration-150">Rejestracja</li>
           </Link>
           <Link href={"translation"}>
-            <li className="hover:text-gray-500 duration-150">Translations</li>
+            <li className="hover:text-gray-500 duration-150">Tłumaczenia</li>
           </Link>
           <Link href={"download"}>
-            <li className="hover:text-gray-500 duration-150">Download</li>
+            <li className="hover:text-gray-500 duration-150">Pobierz</li>
           </Link>
           <Link href={"pattern"}>
-            <li className="hover:text-gray-500 duration-150">Pattern</li>
+            <li className="hover:text-gray-500 duration-150">Wzory</li>
           </Link>
           <Link href={"nas"}>
-            <li className="hover:text-gray-500 duration-150">The Nas</li>
+            <li className="hover:text-gray-500 duration-150">O nas</li>
           </Link>
           <Link href={"contact"}>
-            <li className="hover:text-gray-500 duration-150">Contact</li>
+            <li className="hover:text-gray-500 duration-150">Kontakt</li>
           </Link>
         </ul>
       </div>
