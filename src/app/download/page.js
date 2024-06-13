@@ -25,7 +25,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Umowa polsko-niemiecka</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -37,7 +37,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Umowa polsko-włoska</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -49,7 +49,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Umowa polsko-holenderska</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -61,7 +61,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Umowa darowizny</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -73,7 +73,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Umowa kupna-sprzedaży</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -85,7 +85,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Deklaracja PCC-3</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -97,7 +97,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Deklaracja AKC-US</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -109,7 +109,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Oświadczenie pod odpowiedzialnością karną</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -121,7 +121,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Zgłoszenie zbycia pow. Nowotarski</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -133,7 +133,7 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Zgłoszenie zbycia pow. Tatrzański</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">
@@ -145,7 +145,31 @@ export default function App() {
           <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
             <div className="flex gap-3 items-center text-sm md:text-md">
               <FaFilePdf />
-              <p>Umowa polsko - angielska</p>
+              <p>Zgody RODO</p>
+            </div>
+            <div className="flex gap-3 items-center text-sm md:text-md">
+              <button className="text-[#14a8e9] text-sm md:text-md">
+                Download
+              </button>
+              <IoMdDownload size={25} className="group-hover:animate-bounce" />
+            </div>
+          </li>
+          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+            <div className="flex gap-3 items-center text-sm md:text-md">
+              <FaFilePdf />
+              <p>Pełnomocnictwo i Oświadczenie</p>
+            </div>
+            <div className="flex gap-3 items-center text-sm md:text-md">
+              <button className="text-[#14a8e9] text-sm md:text-md">
+                Download
+              </button>
+              <IoMdDownload size={25} className="group-hover:animate-bounce" />
+            </div>
+          </li>
+          <li className="flex justify-between gap-5 border-b border-gray-300 p-4 group duration-300 hover:border-gray-900">
+            <div className="flex gap-3 items-center text-sm md:text-md">
+              <FaFilePdf />
+              <p>Oświadczenie sprawcy kolizji</p>
             </div>
             <div className="flex gap-3 items-center text-sm md:text-md">
               <button className="text-[#14a8e9] text-sm md:text-md">

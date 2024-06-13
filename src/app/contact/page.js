@@ -29,7 +29,7 @@ const page = () => {
                   <div className="mb-4">
                     <p>Adres</p>
                     <Button
-                      className="bg-blue-100 w-full items-start py-2"
+                      className="bg-blue-100 text-[#14a8e9] w-full items-start py-2"
                       startContent={
                         <FaLocationCrosshairs className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
@@ -46,7 +46,7 @@ const page = () => {
                   <div className="mb-4">
                     <p>Zadzwoń do nas</p>
                     <Button
-                      className="bg-blue-100 w-full py-2"
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
                         <FaPhoneAlt className="text-2xl text-default-400 pointer-events-none flex-shrink-0 py-[3px]" />
                       }
@@ -60,7 +60,7 @@ const page = () => {
                     <p>E-mail </p>
                     <p>dział rejestracji i tłumaczeń</p>
                     <Button
-                      className="bg-blue-100 w-full py-2"
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
@@ -72,7 +72,7 @@ const page = () => {
                     </Button>
                     <p>dział ubezpieczeń</p>
                     <Button
-                      className="bg-blue-100 w-full py-2"
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2 text-blue-600"
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
@@ -91,44 +91,48 @@ const page = () => {
               <Tab key="music" title="Białka Tatrzańska">
                 <div>
                   <div className="mb-4">
-                    <p>Środkowa 162</p>
-                    <Input
-                      type="text"
-                      placeholder="  34-405 Białka Tatrzańska"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <p>Adres</p>
+                    <Button
+                      className="bg-blue-100 w-full text-[#14a8e9] items-start py-2"
                       startContent={
                         <FaLocationCrosshairs className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
-                    />
+                      onClick={() =>
+                        window.open(
+                          "https://www.google.com/maps?q=34-400+Nowy+Targ",
+                          "_blank"
+                        )
+                      }
+                    >
+                      JanaŚrodkowa 162, 34-405 Białka Tatrzańska
+                    </Button>
                   </div>
                   <div className="mb-4">
                     <p>Zadzwoń do naszego innego biura</p>
-                    <Input
-                      type="number"
-                      placeholder="+48 887 770 774"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
                         <FaPhoneAlt className="text-2xl text-default-400 pointer-events-none flex-shrink-0 py-[3px]" />
                       }
-                    />
+                      onClick={() => window.open("tel:+48887770774", "_self")}
+                    >
+                      +48 887 770 774
+                    </Button>
                   </div>
                   <div className="space-y-2">
                     <p>Pon - Pt, 9:00-16:00</p>
                     <p>E-mail </p>
-                    <Input
-                      type="email"
-                      placeholder=" nowytarg@liderpodhale.pl"
-                      size="lg"
-                      color="primary"
-                      className=" py-2"
+                    <Button
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
-                    />
+                      onClick={() =>
+                        window.open("mailto:nowytarg@liderpodhale.pl", "_blank")
+                      }
+                    >
+                      nowytarg@liderpodhale.pl
+                    </Button>
                   </div>
                 </div>
               </Tab>
