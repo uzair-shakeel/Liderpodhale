@@ -55,7 +55,7 @@ const Registrations = () => {
               className="h-[200px] lg:h-[260px] object-cover"
             />
             <div className="py-4 px-3">
-              <h3 className="font-semibold py-2 text-xl text-center lg:text-start lg:text-lg">
+              <h3 className="font-semibold py-2 text-xl text-start md:text-center lg:text-start lg:text-lg">
                 {item.title}
               </h3>
               <p className="leading-6 text-gray-700 text-sm text-justify">

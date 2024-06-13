@@ -74,7 +74,7 @@ const HomePage = () => {
 
   return (
     <>
-      <section className="px-[6%] py-[5%] bg-white">
+      <section className="px-[6%] py-[5%] pb-20 md:pb-0 bg-white">
         <div className="grid lg:grid-cols-2 gap-[5%]">
           <div className="my-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-[#14a8e9]">
@@ -100,7 +100,7 @@ const HomePage = () => {
           Insurance
         </h1>
         <div className="w-full overflow-x-auto carousel-container">
-          <div className="flex w-1/2 lg:w-1/4 animate-carousel  gap-5 py-6">
+          <div className="flex w-full md:w-1/2 lg:w-1/4 animate-carousel  gap-5 py-6">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -167,7 +167,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="px-[6%] py-[8%] bg-[#ecfafa] flex items-center justify-center flex-col">
+      <section className="px-[6%] py-[8%]  bg-[#ecfafa] flex items-center justify-center flex-col">
         <h2 className="font-bold text-[#162a5d] text-2xl text-center">
           Już obsłużyliśmy ponad 110 000 zadowolonych klientów
         </h2>
@@ -178,7 +178,7 @@ const HomePage = () => {
         </p>
 
         {/* <Carousel /> */}
-        <div className="flex gap-[20px] my-[20px]  lg:flex-row">
+        <div className="flex gap-[20px] my-[20px] flex-col md:flex-row">
           <Check
             companyName={"KALATA"}
             testimonialText={

@@ -23,13 +23,13 @@ const Footer = () => {
         </button>
         <p>Wróć na górę</p>
       </div>
-      <div className="flex justify-between py-8">
-        <div className="text-center font-semibold">
+      <div className="flex flex-col md:flex-row justify-between py-8">
+        <div className="text-center font-semibold flex flex-col items-center md:items-start">
           <Image src={logo} alt="logo" className="h-24 lg:h-[170px] w-auto" />
           <h2 className="text-[#14a8e9]">Liderpodhale PL</h2>
         </div>
 
-        <div className="flex gap-[30%] w-[40%]">
+        <div className="flex justify-center py-4 md:py-auto gap-[30%] md:w-[40%]">
           <ul className="space-y-3 py-4">
             <li className="font-semibold ">Sekcje</li>
             <li className=" cursor-pointer">Ubezpieczenia</li>

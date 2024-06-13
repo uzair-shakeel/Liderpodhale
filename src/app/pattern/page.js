@@ -76,16 +76,16 @@ const Page = () => {
   const [selectedStany, setSelectedStany] = useState(Stany[0]);
 
   return (
-    <div className="py-12 px-[10%] space-y-12 bg-[#ecfafa]">
+    <div className="py-12 px-[5%] lg:px-[10%] space-y-12 bg-[#ecfafa]">
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Austria</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Austria.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedImage(image)}
                 >
                   <Image
@@ -98,14 +98,13 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedImage}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
-                height={500}
               />
             </div>
           </div>
@@ -114,12 +113,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Belgia</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Belgia.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedBelgia(image)}
                 >
                   <Image
@@ -132,11 +131,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedBelgia}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -148,12 +147,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Dania</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Dania.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedDania(image)}
                 >
                   <Image
@@ -166,11 +165,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedDania}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -182,12 +181,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Francja</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Francja.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedFrancja(image)}
                 >
                   <Image
@@ -200,11 +199,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedFrancja}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -216,12 +215,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Niemcy</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Niemcy.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedNiemcy(image)}
                 >
                   <Image
@@ -234,11 +233,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedNiemcy}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -250,12 +249,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Wielka Brytania</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Wielka.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedWielka(image)}
                 >
                   <Image
@@ -268,11 +267,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedWielka}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -284,12 +283,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Grecja</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Grecja.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedGrecja(image)}
                 >
                   <Image
@@ -302,11 +301,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedGrecja}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -318,12 +317,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Irlandia</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Irlandia.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedIrlandia(image)}
                 >
                   <Image
@@ -336,11 +335,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedIrlandia}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -352,12 +351,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Włochy</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Włochy.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedWłochy(image)}
                 >
                   <Image
@@ -370,11 +369,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedWłochy}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -386,12 +385,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Holandia</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Holandia.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedHolandia(image)}
                 >
                   <Image
@@ -404,11 +403,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedHolandia}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -420,12 +419,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Norwegia</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Norwegia.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedNorwegia(image)}
                 >
                   <Image
@@ -438,11 +437,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedNorwegia}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -454,12 +453,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Hiszpania</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Hiszpania.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedHiszpania(image)}
                 >
                   <Image
@@ -472,11 +471,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedHiszpania}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -488,12 +487,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Szwajcaria</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Szwajcaria.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedSzwajcaria(image)}
                 >
                   <Image
@@ -506,11 +505,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedSzwajcaria}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}
@@ -522,12 +521,12 @@ const Page = () => {
       <Card>
         <CardBody>
           <h1 className="font-semibold text-3xl ">Stany Zjednoczone</h1>
-          <div className="flex gap-4">
-            <div className="flex flex-col gap-4 max-w-[20%] py-4">
+          <div className="flex flex-col lg:flex-row md:gap-4">
+            <div className="flex flex-row lg:flex-col gap-2 md:gap-4 w-full lg:max-w-[20%] py-4">
               {Stany.map((image, index) => (
                 <div
                   key={index}
-                  className="w-full h-[100px] cursor-pointer"
+                  className="w-full h-[70px] md:h-[100px] cursor-pointer"
                   onClick={() => setSelectedStany(image)}
                 >
                   <Image
@@ -540,11 +539,11 @@ const Page = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full h-[500px]">
+            <div className="w-full  lg:h-[500px]">
               <Image
                 src={selectedStany}
                 alt="Selected Austria"
-                className="w-full h-full object-cover"
+                className="w-full h-[200px] lg:h-[400px] object-cover"
                 layout="responsive"
                 width={"100%"}
                 height={500}

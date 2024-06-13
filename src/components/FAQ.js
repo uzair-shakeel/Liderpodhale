@@ -4,7 +4,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function FAQ() {
   return (
     <div className="flex flex-col">
-      <h1 className="font-bold text-2xl py-3 text-[#162a5d]">
+      <h1 className="font-bold text-2xl text-center md:text-start py-3 text-[#162a5d]">
         Najczęściej zadawane pytania
       </h1>
       <Accordion selectionMode="multiple">

@@ -62,7 +62,7 @@ const Insurances = () => {
       <h1 className="uppercase pb-8 font-bold text-3xl text-[#14a8e9] text-center">
         samochodu
       </h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6">
         {items.map((item, index) => (
           <div
             key={index}
@@ -73,7 +73,7 @@ const Insurances = () => {
               alt={item.title}
               className="h-[160px] object-cover"
             />
-            <div className="py-4 px-3 text-center lg:text-start">
+            <div className="py-4 px-3 text-start md:text-center lg:text-start">
               <h3 className="font-semibold py-2 text-lg">{item.title}</h3>
               <p className="leading-6 text-justify text-gray-700 text-sm">
                 {item.description}

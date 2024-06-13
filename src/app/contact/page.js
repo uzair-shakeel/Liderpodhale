@@ -16,7 +16,7 @@ import { MdEmail } from "react-icons/md";
 const page = () => {
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
-      <h1 className="text-3xl text-center text-[#14a8e9] font-bold pb-8">
+      <h1 className="text-2xl md:text-3xl text-center text-[#14a8e9] font-bold pb-4 md:pb-8">
         SKONTAKTUJ SIĘ Z NAMI
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

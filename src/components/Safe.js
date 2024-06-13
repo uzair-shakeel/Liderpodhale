@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 const Safe = () => {
   return (
     <div className="px-[5%] lg:px-[10%] py-6 lg:py-14">
-      <h1 className="pb-10 font-bold text-2xl text-[#162a5d]">
+      <h1 className="pb-10 text-center md:text-start font-bold text-2xl text-[#162a5d]">
         Zakup ubezpieczenia online jest bezpieczny i pewny
       </h1>
       <div className="grid  lg:grid-cols-3 gap-6">

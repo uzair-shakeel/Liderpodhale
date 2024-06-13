@@ -9,9 +9,9 @@ const page = () => {
   return (
     <div className="bg-[#ecfafa]">
       <Image src={bg} alt="bg" />
-      <MdMenuBook size={100} className=" mx-auto" />
+      <MdMenuBook className=" mx-auto h-20 w-20 md:w-30 md:w-30 lg:w-40 lg:h-40" />
       <div className="py-12 text-center">
-        <h1 className="text-3xl lg:text-5xl font-bold text-[#14a8e9]">
+        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#14a8e9]">
           Tłumaczenia przysięgłe
         </h1>
         <p className="text-md lg:text-lg px-[15%] py-3">

@@ -6,7 +6,7 @@ export default function App() {
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <Card
         isBlurred
-        className="px-4 border-none bg-background/60 dark:bg-default-100/50 max-w-screen"
+        className="px-2 md:px-3 lg:px-4 border-none bg-background/60 dark:bg-default-100/50 max-w-screen"
         shadow="sm"
       >
         <CardBody>
@@ -31,7 +31,7 @@ export default function App() {
                   <p className="text-small text-foreground/80 pb-8 mt-2">
                     Założyciel firmy Liderpodhale
                   </p>
-                  <h3 className="text-foreground/90 text-justify	">
+                  <h3 className="text-foreground/90 text-justify text-sm md:text-md	">
                     Cześć! Nazywam się Grzegorz Warciak i jestem dumnym
                     właścicielem Multiagencji Lider. Moja przygoda z
                     ubezpieczeniami, rejestracją aut i tłumaczeniami rozpoczęła
