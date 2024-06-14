@@ -48,7 +48,7 @@ const page = () => {
                       }
                       onClick={() =>
                         window.open(
-                          "https://www.google.com/maps?q=49.38610,20.10620",
+                          "https://www.google.com/maps?q=49.47800, 20.02460",
                           "_blank"
                         )
                       }
