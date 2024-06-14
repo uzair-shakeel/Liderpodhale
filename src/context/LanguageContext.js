@@ -1,18 +1,13 @@
-// context/LanguageContext.js
-
+"use client";
 import React, { createContext, useContext, useState } from "react";
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("pl"); // default to Polish
-
-  const switchLanguage = (lang) => {
-    setLanguage(lang);
-  };
+  const [language, setLanguage] = useState("pl"); // Default language is Polish
 
   return (
-    <LanguageContext.Provider value={{ language, switchLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
