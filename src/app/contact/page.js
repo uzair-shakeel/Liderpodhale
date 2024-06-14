@@ -48,7 +48,7 @@ const page = () => {
                       }
                       onClick={() =>
                         window.open(
-                          "https://www.google.com/maps?q=34-400+Nowy+Targ",
+                          "https://www.google.com/maps?q=49.38610,20.10620",
                           "_blank"
                         )
                       }
@@ -106,7 +106,7 @@ const page = () => {
                     </p>
 
                     <Button
-                      className="bg-blue-100 w-full text-[#14a8e9] py-2 text-blue-600"
+                      className="bg-blue-100 w-full text-[#14a8e9] py-2 "
                       startContent={
                         <MdEmail className="text-2xl text-default-400 pointer-events-none flex-shrink-0 " />
                       }
@@ -125,7 +125,8 @@ const page = () => {
               <Tab key="music" title="Białka Tatrzańska">
                 <div>
                   <div className="mb-4">
-                    <p>Adres</p>
+                    <p>{language === "pl" ? `Adres` : `Адреса`}</p>
+
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] items-start py-2"
                       startContent={
@@ -133,13 +134,13 @@ const page = () => {
                       }
                       onClick={() =>
                         window.open(
-                          "https://www.google.com/maps?q=34-400+Nowy+Targ",
+                          "https://www.google.com/maps?q=49.38610,20.10620",
                           "_blank"
                         )
                       }
                     >
                       {language === "pl"
-                        ? `JanaŚrodkowa 162, 34-405 Białka Tatrzańska`
+                        ? `Środkowa 162, 34-405 Białka Tatrzańska`
                         : `відділ страхування`}
                     </Button>
                   </div>
