@@ -257,7 +257,7 @@ const HomePage = () => {
         </h1>
         <div className="w-full overflow-x-auto carousel-container">
           <div className="flex w-full md:w-1/2 lg:w-1/4 animate-carousel  gap-5 py-6">
-            {items.map((item, index) => (
+            {items?.map((item, index) => (
               <div
                 key={index}
                 className="w-full flex-shrink-0 bg-white hover:scale-105 text-start shadow-lg rounded-lg cursor-pointer duration-300"
