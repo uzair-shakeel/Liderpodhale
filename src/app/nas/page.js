@@ -4,7 +4,7 @@ import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function App() {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
 
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">

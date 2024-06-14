@@ -2,7 +2,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import React from "react";
 
 const Note = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   return (
     <section className="px-[6%] py-4  bg-gray-300">
       <h6 className="text-tiny md:text-sm fotn-bold">

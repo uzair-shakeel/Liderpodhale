@@ -15,7 +15,7 @@ import { MdEmail } from "react-icons/md";
 import { useLanguage } from "@/context/LanguageContext";
 
 const page = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <h1 className="text-2xl md:text-3xl text-center text-[#14a8e9] font-bold pb-4 md:pb-8">

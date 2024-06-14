@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

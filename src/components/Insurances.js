@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Insurances = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   const itemsPolish = [
     {
       id: 1,

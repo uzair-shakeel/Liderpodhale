@@ -3,7 +3,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function FAQ() {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   return (
     <div className="flex flex-col">
       <h1 className="font-bold text-2xl text-center md:text-start py-3 text-[#162a5d]">

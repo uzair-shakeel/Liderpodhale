@@ -16,7 +16,7 @@ import Note from "../../components/Note";
 import { useLanguage } from "@/context/LanguageContext";
 
 const HomePage = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   const itemsPolish =
     [
       {

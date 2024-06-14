@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Registrations = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   const itemsPolish = [
     {
       id: 1,

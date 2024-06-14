@@ -7,7 +7,7 @@ import { MdMenuBook } from "react-icons/md";
 import { useLanguage } from "@/context/LanguageContext";
 
 const page = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
 
   return (
     <div className="bg-[#ecfafa]">

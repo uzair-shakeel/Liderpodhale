@@ -5,7 +5,7 @@ import { FaFilePdf } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 
 export default function App() {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
 
   const handleDownloadClick = (pdfFileName) => {
     const pdfPath = `/PDFs/${pdfFileName}`;

@@ -3,7 +3,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 
 const Safe = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() || {};
   return (
     <div className="px-[5%] lg:px-[10%] py-6 lg:py-14">
       <h1 className="pb-10 text-center md:text-start font-bold text-2xl text-[#162a5d]">

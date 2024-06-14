@@ -10,7 +10,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Avatar, AvatarGroup } from "@nextui-org/react";
 
 const Header = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage() || {};
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
