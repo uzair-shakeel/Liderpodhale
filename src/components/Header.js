@@ -60,7 +60,7 @@ const Header = () => {
               {language === "pl" ? " Kontakt" : "Контакт"}
             </li>
           </Link>
-          <AvatarGroup isBordered>
+          <AvatarGroup isBordered className="flex gap-1">
             <Avatar
               onClick={() => setLanguage("pl")}
               src="https://cdn.britannica.com/52/3552-004-83ABA964/Flag-Poland.jpg"
@@ -76,9 +76,21 @@ const Header = () => {
         <Link href="home">
           <Image src={logo} alt="logo" className="h-24 w-auto" />
         </Link>
-        <button onClick={() => setOpen(!open)}>
-          <CiMenuFries className="w-8 h-auto duration-75 hover:text-blue-600 hover:scale-[110%] hover:rotate-12 hover:text-bold" />
-        </button>
+        <div className="flex gap-4">
+          <AvatarGroup isBordered className="flex gap-7">
+            <Avatar
+              onClick={() => setLanguage("pl")}
+              src="https://cdn.britannica.com/52/3552-004-83ABA964/Flag-Poland.jpg"
+            />
+            <Avatar
+              onClick={() => setLanguage("uk")}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png"
+            />
+          </AvatarGroup>
+          <button onClick={() => setOpen(!open)}>
+            <CiMenuFries className="w-8 h-auto duration-75 hover:text-blue-600 hover:scale-[110%] hover:rotate-12 hover:text-bold" />
+          </button>
+        </div>
       </div>
 
       <aside
@@ -98,7 +110,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Home
+              {language === "pl" ? "Strona główna" : "Головна"}
             </li>
           </Link>
           <Link href={"insurance"}>
@@ -106,7 +118,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              insurance
+              {language === "pl" ? "Ubezpieczenia" : "Страхування"}
             </li>
           </Link>
           <Link href={"registration"}>
@@ -114,7 +126,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Registration
+              {language === "pl" ? "Rejestracja" : "Реєстрація"}
             </li>
           </Link>
           <Link href={"translation"}>
@@ -122,7 +134,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Translations
+              {language === "pl" ? "Tłumaczenia" : "Переклад"}
             </li>
           </Link>
           <Link href={"download"}>
@@ -130,7 +142,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Download
+              {language === "pl" ? "Pobierz" : "Завантаження"}
             </li>
           </Link>
           <Link href={"pattern"}>
@@ -138,7 +150,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Pattern
+              {language === "pl" ? "Wzory" : "Зразки"}
             </li>
           </Link>
           <Link href={"nas"}>
@@ -146,7 +158,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              The Nas
+              {language === "pl" ? "O nas" : "Про нас"}
             </li>
           </Link>
           <Link href={"contact"}>
@@ -154,7 +166,7 @@ const Header = () => {
               onClick={() => setOpen(false)}
               className="hover:text-gray-500 duration-150"
             >
-              Contact
+              {language === "pl" ? " Kontakt" : "Контакт"}
             </li>
           </Link>
         </ul>

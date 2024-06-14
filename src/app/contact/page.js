@@ -12,22 +12,35 @@ import {
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useLanguage } from "@/context/LanguageContext";
 
 const page = () => {
+  const { language } = useLanguage();
   return (
     <div className="py-12 px-[5%] lg:px-[10%] bg-[#ecfafa]">
       <h1 className="text-2xl md:text-3xl text-center text-[#14a8e9] font-bold pb-4 md:pb-8">
-        SKONTAKTUJ SIĘ Z NAMI
+        {language === "pl"
+          ? `SKONTAKTUJ SIĘ Z
+        NAMI`
+          : `ЗВ'ЯЖІТЬСЯ З НАМИ
+`}
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="lg:pr-[12%] text-center lg:text-start">
-          <h2>Porozmawiajmy o wszystkim razem</h2>
+          <h2>
+            {" "}
+            {language === "pl"
+              ? `Porozmawiajmy o wszystkim razem`
+              : `Давайте
+обговоримо все
+разом`}
+          </h2>
           <div className="flex w-full flex-col">
             <Tabs aria-label="Options" className="py-4">
               <Tab key="photos" title="Nowy Targ">
                 <div>
                   <div className="mb-4">
-                    <p>Adres</p>
+                    <p> {language === "pl" ? `Adres` : `Адреса`}</p>
                     <Button
                       className="bg-blue-100 text-[#14a8e9] w-full items-start py-2"
                       startContent={
@@ -40,11 +53,17 @@ const page = () => {
                         )
                       }
                     >
-                      Jana Kilińskiego 15, 34-400 Nowy Targ
+                      {language === "pl"
+                        ? `Jana Kilińskiego
+                      15, 34-400 Nowy Targ`
+                        : `Ян Кілінський
+                      15, 34-400 Новий Тарг`}
                     </Button>
                   </div>
                   <div className="mb-4">
-                    <p>Zadzwoń do nas</p>
+                    <p>
+                      {language === "pl" ? `Zadzwoń do nas` : `дзвоніть нам`}
+                    </p>
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
@@ -57,8 +76,17 @@ const page = () => {
                   </div>
                   <div className="space-y-2">
                     <p>Pon - Pt, 8:00-17:00</p>
-                    <p>E-mail </p>
-                    <p>dział rejestracji i tłumaczeń</p>
+                    <p>
+                      {language === "pl"
+                        ? `E-mail`
+                        : `адреса електронної пошти`}
+                    </p>
+                    <p>
+                      {" "}
+                      {language === "pl"
+                        ? `dział rejestracji i tłumaczeń`
+                        : `відділ реєстрації та перекладу`}
+                    </p>
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
@@ -70,7 +98,13 @@ const page = () => {
                     >
                       nowytarg@liderpodhale.pl
                     </Button>
-                    <p>dział ubezpieczeń</p>
+                    <p>
+                      {" "}
+                      {language === "pl"
+                        ? `dział ubezpieczeń`
+                        : `відділ страхування`}
+                    </p>
+
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] py-2 text-blue-600"
                       startContent={
@@ -104,11 +138,17 @@ const page = () => {
                         )
                       }
                     >
-                      JanaŚrodkowa 162, 34-405 Białka Tatrzańska
+                      {language === "pl"
+                        ? `JanaŚrodkowa 162, 34-405 Białka Tatrzańska`
+                        : `відділ страхування`}
                     </Button>
                   </div>
                   <div className="mb-4">
-                    <p>Zadzwoń do naszego innego biura</p>
+                    <p>
+                      {language === "pl"
+                        ? `Zadzwoń do naszego innego biura`
+                        : `дзвоніть нам`}
+                    </p>
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
@@ -121,7 +161,11 @@ const page = () => {
                   </div>
                   <div className="space-y-2">
                     <p>Pon - Pt, 9:00-16:00</p>
-                    <p>E-mail </p>
+                    <p>
+                      {language === "pl"
+                        ? `E-mail`
+                        : `адреса електронної пошти`}
+                    </p>
                     <Button
                       className="bg-blue-100 w-full text-[#14a8e9] py-2"
                       startContent={
@@ -140,20 +184,50 @@ const page = () => {
           </div>
         </div>
         <div className="lg:px-[8%] text-center lg:text-start">
-          <p>Interesuję się...</p>
+          <p>{language === "pl" ? `Interesuję się...` : `Мене цікавить...`}</p>
           <div className="flex flex-wrap gap-4 py-8 ">
-            <Button>Rejestracja samochodu</Button>
-            <Button>Ubezpieczenie</Button>
-            <Button>Tłumaczenie</Button>
-            <Button>Problem</Button>
-            <Button>Inne</Button>
+            <Button>
+              {language === "pl"
+                ? `Rejestracja samochodu`
+                : `Реєстрація автомобіля`}
+            </Button>
+            <Button>
+              {language === "pl" ? `Ubezpieczenie` : `Страхування`}
+            </Button>
+            <Button>{language === "pl" ? `Tłumaczenie` : `Переклад`}</Button>
+            <Button>{language === "pl" ? `Problem` : `Питання`}</Button>
+            <Button>{language === "pl" ? `Inne` : `Інше`}</Button>
           </div>
           <div className="space-y-6">
-            <Input type="text" label="Imię" color="primary" />
-            <Input type="text" label="Nazwisko" color="primary" />
-            <Input type="email" label="Adres email" color="primary" />
-            <Input type="number" label="Numer telefonu" color="primary" />
-            <Input type="text" label="Twoja wiadomość" color="primary" />
+            <Input
+              type="text"
+              label={language === "pl" ? "Imię" : "Ім'я"}
+              color="primary"
+            />
+            <Input
+              type="text"
+              label={language === "pl" ? "Nazwisko" : "Прізвище"}
+              color="primary"
+            />
+            <Input
+              type="email"
+              label={
+                language === "pl" ? "Adres email" : "Адреса електронної пошти"
+              }
+              color="primary"
+            />
+            <Input
+              type="number"
+              label={language === "pl" ? "Numer telefonu" : "Номер телефону"}
+              color="primary"
+            />
+            <Input
+              type="text"
+              label={
+                language === "pl" ? "Twoja wiadomość" : "Ваше повідомлення"
+              }
+              color="primary"
+            />
           </div>
         </div>
       </div>

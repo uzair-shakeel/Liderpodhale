@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import bg from "../../../public/Insurance3.png";
 import car from "../../../public/vehicle.jpeg";
 import property from "../../../public/property.jpeg";
@@ -17,7 +17,7 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const HomePage = () => {
   const { language } = useLanguage();
-  const carouselItemsPolish = [
+  const itemsPolish = [
     {
       id: 1,
       title: "Ubezpieczenie pojazdu",
@@ -62,7 +62,7 @@ const HomePage = () => {
     },
   ];
 
-  const carouselItemsUkrainian = [
+  const itemsUkrainian = [
     {
       id: 1,
       title: "Страхування транспортних засобів",
@@ -193,8 +193,8 @@ const HomePage = () => {
     },
   ];
 
-  const carouselItems =
-    language === "pl" ? carouselItemsPolish : carouselItemsUkrainian;
+  const carouselItems = language === "pl" ? itemsPolish : itemsUkrainian;
+  // const carouselItems = itemsUkrainian;
 
   const cardData = language === "pl" ? cardDataPolish : cardDataUkrainian;
 
@@ -207,6 +207,15 @@ const HomePage = () => {
     ...carouselItems,
     ...carouselItems,
   ]);
+
+  useEffect(() => {
+    setItems([
+      ...carouselItems,
+      ...carouselItems,
+      ...carouselItems,
+      ...carouselItems,
+    ]);
+  }, [language]);
 
   return (
     <>
